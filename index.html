@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="game-container">
+        <!-- Header Section -->
+        <div class="game-header">
+            <h1 class="game-title">GUESS MY NUMBER</h1>
+            <h3 class="game-subtitle">Guess a number between 1 and 20</h3>
+        </div>
+
+        <!-- Logo -->
+        <div class="game-logo">
+            <!-- insert logo -->
+        </div>
+
+        <!-- Input Section -->
+        <div class="game-input">
+            <div class="input-controls">
+                <input type="number" class="number-input" id="guessInput" min="1" max="20"
+                    placeholder="Enter your guess...">
+                <button type="submit" class="btn-check">Check</button>
+            </div>
+
+            <div class="game-feedback">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M3.708 17.096L3 16.39l6.304-6.354l4 4l6.027-5.939H16v-1h5v5h-1V8.804L13.304 15.5l-4-4z" />
+                </svg>
+                <p class="feedback-message">Too High</p>
+            </div>
+        </div>
+
+        <!-- Score Display -->
+        <div class="game-stats">
+            <p class="current-score"></p>
+            <p class="best-score"></p>
+        </div>
+
+        <!-- Reset Button -->
+        <button class="btn-reset">Play Again</button>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
