@@ -79,7 +79,10 @@ checkBtn.addEventListener("click", () => {
 const resetBtn = document.querySelector(".btn-reset");
 resetBtn.addEventListener("click", () => {
   const hardcoded = Math.floor(Math.random() * 20) + 1;
-  score === 15
+  score = 15;
+  scoreDisplay.textContent = `Score: ${score}`;
+  feedbackMessage.textContent = "Guess";
+
   checkBtn.disabled = false;
   inputField.disabled = false;
 });
